@@ -14,12 +14,15 @@
 - 1000? 100?
 
 #Post-reconstruction checks
-- blast nt
+- blast nt (blast shell script)
 - subs model & clock model checks
 
 #fasta file
 
 #consensus seq & uncertainty
+-assembly software, uncertiany at each base, proportion of bases at each nc, when to call a gap or N?
+-table: each nucleotide is a row, each position in alignment is column?
+
 
 #statistical tests:
 - We should use some sort of cross-validation whether the sequences generated would result in a genetic distance to a test tip...
