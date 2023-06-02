@@ -20,3 +20,7 @@
 #fasta file
 
 #consensus seq & uncertainty
+
+#statistical tests:
+- We should use some sort of cross-validation whether the sequences generated would result in a genetic distance to a test tip...
+  - for example, measure the distance to a tip that is excluded using an ML tree, then simulate the sequence at the node and reestimate the ml tree. Our expectations is that the distance from the node to the excluded sequence is central to that of the reconstructed sequences to the. 
