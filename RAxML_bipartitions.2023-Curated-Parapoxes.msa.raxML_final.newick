@@ -1,0 +1,129 @@
+#NEXUS
+begin taxa;
+	dimensions ntax=27;
+	taxlabels
+	'AY386263.1_Orf_OV-IA82'[&!color=#008000]
+	'AY386264.1_Orf_OV-SA00'[&!color=#800080]
+	'AY386265.1_Bovine_papular_stomatitis_BV-AR02'[&!color=#ff6fcf]
+	'DQ184476.1_Orf_NZ2'[&!color=#008000]
+	'GQ329669.1_Pseudocowpox_F00.120R'[&!color=#ff0000]
+	'GQ329670.1_Pseudocowpox_VR634'[&!color=#ff0000]
+	'HM133903.1_Orf_D1701'[&!color=#008000]
+	'KF234407.1_Orf_NA1-11'[&!color=#008000]
+	'KF837136.1_Orf_B029'[&!color=#008000]
+	'KM875470.1_Bovine_papular_stomatitis_BV-TX09c15'[&!color=#ff6fcf]
+	'KM875471.1_Bovine_papular_stomatitis_BV-TX09c5'[&!color=#ff6fcf]
+	'KM875472.1_Bovine_papular_stomatitis_BV-TX09c1'[&!color=#ff6fcf]
+	'KP010353.1_Orf_YX'[&!color=#800080]
+	'KP010354.1_Orf_GO'[&!color=#800080]
+	'KP010355.1_Orf_NP'[&!color=#800080]
+	'KP010356.1_Orf_SJ1'[&!color=#800080]
+	'KY053526.1_Orf_OV-HN3-12'[&!color=#008000]
+	'MG674916.2_Orf_NA17'[&!color=#800080]
+	'MG712417.1_Orf_SY17'[&!color=#008000]
+	'MN331655.1_Orf_CL17'[&!color=#008000]
+	'MN389453.1_Orf_GZ'[&!color=#008000]
+	'MN454854.1_Orf_TVL'[&!color=#008000]
+	'NC_005336.1_Orf'[&!color=#800080]
+	'NC_005337.1_Bovine_papula_stomatitis'[&!color=#ff6fcf]
+	'NC_013804.1_Pseudocowpox'[&!color=#ff0000]
+	'NC_025963.1_Parapoxvirus_red_deer_HL953'[&!color=#ff6fcf]
+	'NC_035188.1_Seal_parapoxvirus_AFK76s1'[&!color=#ff6fcf]
+;
+end;
+
+begin trees;
+	tree tree_1 = [&R] ((('KP010355.1_Orf_NP':0.006739,(('NC_005336.1_Orf':1.0E-6,'AY386264.1_Orf_OV-SA00':1.0E-6)[&bootstrap=100]:0.025317,'KP010354.1_Orf_GO':0.006036)[&bootstrap=50]:0.004454)[&bootstrap=50]:0.009403,('MG674916.2_Orf_NA17':0.006694,'KP010353.1_Orf_YX':0.01043)[&bootstrap=87]:0.002086)[&bootstrap=35]:0.003898,((('MN331655.1_Orf_CL17':0.004418,('MN389453.1_Orf_GZ':0.006601,'MG712417.1_Orf_SY17':0.00743)[&bootstrap=26]:0.001798)[&bootstrap=100]:0.008965,(('KF234407.1_Orf_NA1-11':4.83E-4,'KY053526.1_Orf_OV-HN3-12':7.32E-4)[&bootstrap=100]:0.014155,('AY386263.1_Orf_OV-IA82':0.007999,((('KF837136.1_Orf_B029':0.008746,'MN454854.1_Orf_TVL':0.003861)[&bootstrap=70]:0.002034,'HM133903.1_Orf_D1701':0.032227)[&bootstrap=50]:0.005872,'DQ184476.1_Orf_NZ2':0.006761)[&bootstrap=50]:0.01058)[&bootstrap=50]:0.005897)[&bootstrap=50]:0.013217)[&bootstrap=100]:0.009294,(('NC_035188.1_Seal_parapoxvirus_AFK76s1':0.563636,(((('AY386265.1_Bovine_papular_stomatitis_BV-AR02':1.0E-6,'NC_005337.1_Bovine_papula_stomatitis':1.0E-6)[&bootstrap=100]:0.012352,('KM875470.1_Bovine_papular_stomatitis_BV-TX09c15':9.4E-5,'KM875471.1_Bovine_papular_stomatitis_BV-TX09c5':0.003225)[&bootstrap=100]:0.006759)[&bootstrap=100]:0.005221,'KM875472.1_Bovine_papular_stomatitis_BV-TX09c1':0.010134)[&bootstrap=100]:0.249433,'NC_025963.1_Parapoxvirus_red_deer_HL953':0.357505)[&bootstrap=99]:0.051214)[&bootstrap=100]:0.204823,('GQ329669.1_Pseudocowpox_F00.120R':0.036206,('NC_013804.1_Pseudocowpox':1.0E-6,'GQ329670.1_Pseudocowpox_VR634':1.0E-6)[&bootstrap=100]:0.035807)[&bootstrap=100]:0.048164)[&bootstrap=100]:0.059433)[&bootstrap=50]:0.007681,'KP010356.1_Orf_SJ1':0.015859);
+end;
+
+begin figtree;
+	set appearance.backgroundColorAttribute="Default";
+	set appearance.backgroundColour=#ffffff;
+	set appearance.branchColorAttribute="User selection";
+	set appearance.branchColorGradient=false;
+	set appearance.branchLineWidth=1.0;
+	set appearance.branchMinLineWidth=0.0;
+	set appearance.branchWidthAttribute="Fixed";
+	set appearance.foregroundColour=#000000;
+	set appearance.hilightingGradient=false;
+	set appearance.selectionColour=#2d3680;
+	set branchLabels.colorAttribute="User selection";
+	set branchLabels.displayAttribute="Branch times";
+	set branchLabels.fontName="sansserif";
+	set branchLabels.fontSize=8;
+	set branchLabels.fontStyle=0;
+	set branchLabels.isShown=false;
+	set branchLabels.significantDigits=4;
+	set layout.expansion=0;
+	set layout.layoutType="RECTILINEAR";
+	set layout.zoom=0;
+	set legend.attribute="bootstrap";
+	set legend.fontSize=10.0;
+	set legend.isShown=false;
+	set legend.significantDigits=4;
+	set nodeBars.barWidth=4.0;
+	set nodeBars.displayAttribute=null;
+	set nodeBars.isShown=false;
+	set nodeLabels.colorAttribute="User selection";
+	set nodeLabels.displayAttribute="Node ages";
+	set nodeLabels.fontName="sansserif";
+	set nodeLabels.fontSize=8;
+	set nodeLabels.fontStyle=0;
+	set nodeLabels.isShown=false;
+	set nodeLabels.significantDigits=4;
+	set nodeShapeExternal.colourAttribute="User selection";
+	set nodeShapeExternal.isShown=false;
+	set nodeShapeExternal.minSize=10.0;
+	set nodeShapeExternal.scaleType=Width;
+	set nodeShapeExternal.shapeType=Circle;
+	set nodeShapeExternal.size=4.0;
+	set nodeShapeExternal.sizeAttribute="Fixed";
+	set nodeShapeInternal.colourAttribute="User selection";
+	set nodeShapeInternal.isShown=false;
+	set nodeShapeInternal.minSize=10.0;
+	set nodeShapeInternal.scaleType=Width;
+	set nodeShapeInternal.shapeType=Circle;
+	set nodeShapeInternal.size=4.0;
+	set nodeShapeInternal.sizeAttribute="Fixed";
+	set polarLayout.alignTipLabels=false;
+	set polarLayout.angularRange=0;
+	set polarLayout.rootAngle=0;
+	set polarLayout.rootLength=100;
+	set polarLayout.showRoot=true;
+	set radialLayout.spread=0.0;
+	set rectilinearLayout.alignTipLabels=false;
+	set rectilinearLayout.curvature=0;
+	set rectilinearLayout.rootLength=100;
+	set scale.offsetAge=0.0;
+	set scale.rootAge=1.0;
+	set scale.scaleFactor=1.0;
+	set scale.scaleRoot=false;
+	set scaleAxis.automaticScale=true;
+	set scaleAxis.fontSize=8.0;
+	set scaleAxis.isShown=false;
+	set scaleAxis.lineWidth=1.0;
+	set scaleAxis.majorTicks=1.0;
+	set scaleAxis.minorTicks=0.5;
+	set scaleAxis.origin=0.0;
+	set scaleAxis.reverseAxis=false;
+	set scaleAxis.showGrid=true;
+	set scaleBar.automaticScale=true;
+	set scaleBar.fontSize=10.0;
+	set scaleBar.isShown=true;
+	set scaleBar.lineWidth=1.0;
+	set scaleBar.scaleRange=0.0;
+	set tipLabels.colorAttribute="User selection";
+	set tipLabels.displayAttribute="Names";
+	set tipLabels.fontName="sansserif";
+	set tipLabels.fontSize=8;
+	set tipLabels.fontStyle=0;
+	set tipLabels.isShown=true;
+	set tipLabels.significantDigits=4;
+	set trees.order=true;
+	set trees.orderType="decreasing";
+	set trees.rooting=true;
+	set trees.rootingType="User Selection";
+	set trees.transform=false;
+	set trees.transformType="cladogram";
+end;
+
